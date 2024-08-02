@@ -20,6 +20,8 @@ namespace Sandbox
 		{
 			Log.Info( $"Player '{channel.DisplayName}' is becoming active (" + channel.Id + ")" );
 
+			channel.CanRefreshObjects = true;
+
 			var goPlayer = new GameObject();
 			goPlayer.Name = "Player";
 			goPlayer.Parent = Game.ActiveScene;
